@@ -7,7 +7,7 @@ const navMenu= document.getElementById('nav-menu');
 const navToggle=document.getElementById('nav-toggle');
 const navClose=document.getElementById('nav-close');
 
-
+console.log("reading")
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
