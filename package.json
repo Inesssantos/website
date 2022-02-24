@@ -6,6 +6,7 @@
   "scripts": {
     "start": "parcel deploy/index.html",
     "build": "parcel build",
+    "predeploy": "npm build deploy/index.html",
     "deploy": "gh-pages -d deploy"
   },
   "keywords": [],
