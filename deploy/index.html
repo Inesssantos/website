@@ -91,7 +91,7 @@
                             <h1 class="home__title">Hi, I'm Ines</h1>
                             <h3 class="home__subtitle">I would love to work with you</h3>
                             <p class="home__description">Scroll down for further info</p>
-                            <a href="#contact" class="button button--flex">
+                            <a href="#contactMe" class="button button--flex">
                                 Contact me <i class="uil uil-message button__icon"></i>
                             </a>
                         </div>
@@ -505,7 +505,7 @@
                             <i class="uil uil-envelope contact__icon"></i>
                             <div>
                                 <h3 class="contact__title">Email me</h3>
-                                <span class="contact__subtitle">inesssantos1997@gmail.com</span>
+                                <span class="contact__subtitle">ines.beatrizfernandessantos@gmail.com</span>
                             </div>
                         </div>
 
@@ -518,30 +518,30 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="https://formspree.io/f/xnqwdkyb" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <label for="name" class="contact__label">Name</label>
+                                <input type="text" id="name" class="contact__input">
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <label for="mail" class="contact__label">Email</label>
+                                <input type="email" id="mail" class="contact__input">
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
+                            <label for="subject" class="contact__label">Project</label>
+                            <input type="subject" id="subject" class="contact__input">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <label for="msg" class="contact__label">Message</label>
+                            <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
                         <div>
-                            <a href="#" class="button button--flex">
+                            <button type="submit" class="button button--flex">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </>
                         </div>
                     </form>
                 </div>
@@ -563,7 +563,7 @@
                             <a href="#portfolio" class="footer__link">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#contact" class="footer__link">Contacts</a>
+                            <a href="#contactMe" class="footer__link">Contacts</a>
                         </li>
                     </ul>
                     <div class="footer__social">
@@ -683,6 +683,7 @@
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script type="text/JavaScript" src="assets/js/main.js"></script>
