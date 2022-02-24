@@ -1,4 +1,4 @@
-import Scrollbar from 'smooth-scrollbar';
+//import Scrollbar from 'smooth-scrollbar';
 import  gsap  from "gsap";
 import  ScrollTrigger  from "gsap/ScrollTrigger";
 //Scrollbar.init(document.querySelector('#smooth-scrolling')) 
