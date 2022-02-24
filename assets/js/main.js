@@ -1,6 +1,6 @@
 //import Scrollbar from 'smooth-scrollbar';
-import  gsap  from "gsap";
-import  ScrollTrigger  from "gsap/ScrollTrigger";
+//import  gsap  from "gsap";
+//import  ScrollTrigger  from "gsap/ScrollTrigger";
 //Scrollbar.init(document.querySelector('#smooth-scrolling')) 
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu= document.getElementById('nav-menu');
@@ -183,13 +183,13 @@ close3.addEventListener('click', ()=>{
     modalContainer3.classList.remove('modal-show');
 })
 
-//Gsap
+/* //Gsap
 gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline({defaults:{ease:"power3.inOut", duration:2}})
 
 tl.to('.home__data', {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity:1, y:0, duration:1.2 })
 .to('.home__social', {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity:1, y:0}, '-=2')
-.to('.home__blob',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity:1, y:0}, '-=1.5')
+.to('.home__blob',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity:1, y:0}, '-=1.5') */
 
 
 
