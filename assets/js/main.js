@@ -1,13 +1,12 @@
 //import Scrollbar from 'smooth-scrollbar';
 //import  gsap  from "gsap";
-//import  ScrollTrigger  from "gsap/ScrollTrigger";
 //Scrollbar.init(document.querySelector('#smooth-scrolling')) 
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu= document.getElementById('nav-menu');
 const navToggle=document.getElementById('nav-toggle');
 const navClose=document.getElementById('nav-close');
 
-
+console.log("reading")
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
@@ -68,6 +67,19 @@ let swiper = new Swiper('.portfolio__container', {
     }
   });
 
+  let swiperModal = new Swiper('.modal__container', {
+    cssMode: true,
+    loop:false,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+    }
+  });
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -103,13 +115,6 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
-/*==================== DARK LIGHT THEME ====================*/ 
-function scrollTop(){
-    const scrollTop = document.getElementById('scroll-top');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollTop)
 
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
@@ -183,13 +188,13 @@ close3.addEventListener('click', ()=>{
     modalContainer3.classList.remove('modal-show');
 })
 
-/* //Gsap
-gsap.registerPlugin(ScrollTrigger);
+
+//Gsap
 let tl = gsap.timeline({defaults:{ease:"power3.inOut", duration:2}})
 
 tl.to('.home__data', {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity:1, y:0, duration:1.2 })
 .to('.home__social', {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity:1, y:0}, '-=2')
-.to('.home__blob',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity:1, y:0}, '-=1.5') */
+.to('.home__blob',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity:1, y:0}, '-=1.5')
 
 
 

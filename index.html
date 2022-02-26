@@ -91,7 +91,7 @@
                             <h1 class="home__title">Hi, I'm Ines</h1>
                             <h3 class="home__subtitle">I would love to work with you</h3>
                             <p class="home__description">Scroll down for further info</p>
-                            <a href="#contact" class="button button--flex">
+                            <a href="#contactMe" class="button button--flex">
                                 Contact me <i class="uil uil-message button__icon"></i>
                             </a>
                         </div>
@@ -505,7 +505,7 @@
                             <i class="uil uil-envelope contact__icon"></i>
                             <div>
                                 <h3 class="contact__title">Email me</h3>
-                                <span class="contact__subtitle">inesssantos1997@gmail.com</span>
+                                <span class="contact__subtitle">ines.beatrizfernandessantos@gmail.com</span>
                             </div>
                         </div>
 
@@ -518,30 +518,30 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="https://formspree.io/f/xnqwdkyb" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <label for="name" class="contact__label">Name</label>
+                                <input type="text" id="name" class="contact__input">
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <label for="mail" class="contact__label">Email</label>
+                                <input type="email" id="mail" class="contact__input">
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
+                            <label for="subject" class="contact__label">Project</label>
+                            <input type="subject" id="subject" class="contact__input">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <label for="msg" class="contact__label">Message</label>
+                            <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
                         <div>
-                            <a href="#" class="button button--flex">
+                            <button type="submit" class="button button--flex">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </>
                         </div>
                     </form>
                 </div>
@@ -563,7 +563,7 @@
                             <a href="#portfolio" class="footer__link">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#contact" class="footer__link">Contacts</a>
+                            <a href="#contactMe" class="footer__link">Contacts</a>
                         </li>
                     </ul>
                     <div class="footer__social">
@@ -588,101 +588,201 @@
         <!-- Modal -->
         <div id="modal-container1" class="modal-container">
             <div class="modal">
-                <h2>OutSports</h2>
-                <p>This project consists of an android app designed to help monitor and record the practice 
-                    of outdoor sports recommended for running/walking with a group or alone,
-                     with features geared towards the achievement of that goal in a safe and efficient matter</p>
-                <div class="container-gallery">
-                    <div class="box-gallery">
-                      <img src="assets/img/port1-img1.png">
-                      <p>Map view</p>
+                <div class="modal__header">
+                    <div><h2>Sports app - OutSports</h2></div>
+                </div>
+                
+                <div class="grid modal__content">
+                    <div class="modal__content-features">
+                        <h3>Main features</h3>
+                        <p> - Real time tracking, of the user and people in the group</p>
+                        <p> - Personalization of the group settings</p>
+                        <p> - Recording of past group activities</p>
+                        <p> - Tracking of calories burned, time, and velocity</p>
+                        <h3>API used</h3>
+                        <p> - Android Studio</p>
+                        <h3>Database used</h3>
+                        <p> - Firebase</p>
                     </div>
-                    <div class="box-gallery">
-                      <img src="assets/img/port1-img2.png">
-                      <p>Run records</p>
+                    <div class="gallery">
+                        <div class="gallery__column">
+                                <figure class="gallery__thumb">
+                                    <img src="assets/img/port1-img1.png" alt="" class="gallery__image">
+                                </figure>
+                    
+                                <figure class="gallery__thumb">
+                                    <img src="assets/img/port1-img2.png" alt="" class="gallery__image">
+                    
+                                <figure class="gallery__thumb">
+                                    <img src="assets/img/port1-img3.png" alt="" class="gallery__image">
+                                </figure>
+                        </div>
+                        
+                        <div class="gallery__column">
+                                <figure class="gallery__thumb">
+                                    <img src="assets/img/port1-img4.png" alt="" class="gallery__image">
+                                </figure>
+                            
+                                <figure class="gallery__thumb">
+                                    <img src="assets/img/port1-img5.png" alt="" class="gallery__image">
+                                </figure>
+                    
+                                <figure class="gallery__thumb">
+                                    <img src="assets/img/port1-img6.png" alt="" class="gallery__image">
+                                </figure>
+                        </div>
                     </div>
-                    <div class="box-gallery">
-                      <img src="assets/img/port1-img3.png">
-                      <p>Map view on a group</p>
-                    </div>
-                    <div class="box-gallery">
-                      <img src="assets/img/port1-img4.png">
-                      <p>Group making interface</p>
+                    <div class="modal__close-btn">
+                        <a id="modal-close1" class="modal-close">
+                        <i class="uil uil-times-circle"></i>
+                        </a>
                     </div>
                 </div>
-                <a id="modal-close1" class="button button--flex button--small modal-close">
-                    Close
-                    <i class="uil uil-arrow-right button__icon"></i>
-                </a>
             </div>
         </div>
         <div id="modal-container2" class="modal-container">
             <div class="modal">
-                <h2>Ferias</h2>
-                <p>An android app that allows you to search, save and book an hotel.</p>
-                <div class="container-gallery">
-                    <div class="box-gallery">
-                      <img src="assets/img/port2-img1.jpg">
-                      <p>Log in</p>
+                <div class="modal__header">
+                    <div><h2>Hotel booking app - Ferias</h2></div>
+                    
+                </div>
+                
+                <div class="grid modal__content">
+                    <div class="modal__content-features">
+                        <h3>Main features</h3>
+                        <p> - Administrator area, to add remove and monitor hotels</p>
+                        <p> - Dedicated pages to view hotels, searches, favorites and bookings</p>
+                        <p> - Ability to recognize if the phone is in dark mode and adjust the app accordingly</p>
+                        <h3>API used</h3>
+                        <p> - Android Studio</p>
+                        <h3>Database used</h3>
+                        <p> - Firebase</p>
                     </div>
-                    <div class="box-gallery">
-                      <img src="assets/img/port2-img2.jpg">
-                      <p>Register</p>
+                    <div class="gallery">
+                        <div class="gallery__column">
+                                <figure class="gallery__thumb">
+                                    <img src="assets/img/port2-img1.png" alt="" class="gallery__image">
+                                </figure>
+                    
+                                <figure class="gallery__thumb">
+                                    <img src="assets/img/port2-img2.png" alt="" class="gallery__image">
+                    
+                                <figure class="gallery__thumb">
+                                    <img src="assets/img/port2-img3.png" alt="" class="gallery__image">
+                                </figure>
+                        </div>
+                        
+                        <div class="gallery__column">
+                                <figure class="gallery__thumb">
+                                    <img src="assets/img/port2-img4.png" alt="" class="gallery__image">
+                                </figure>
+                            
+                                <figure class="gallery__thumb">
+                                    <img src="assets/img/port2-img5.png" alt="" class="gallery__image">
+                                </figure>
+                        </div>
                     </div>
-                    <div class="box-gallery">
-                      <img src="assets/img/port2-img3.jpg">
-                      <p>Home</p>
-                    </div>
-                    <div class="box-gallery">
-                      <img src="assets/img/port2-img4.jpg">
-                      <p>Search</p>
-                    </div>
-                    <div class="box-gallery">
-                        <img src="assets/img/port2-img5.jpg">
-                        <p>Hotel view</p>
+                    <div class="modal__close-btn">
+                        <a id="modal-close2" class="modal-close">
+                        <i class="uil uil-times-circle"></i>
+                        </a>
                     </div>
                 </div>
-                <a id="modal-close2" class="button button--flex button--small modal-close">
-                    Close
-                    <i class="uil uil-arrow-right button__icon"></i>
-                </a>
+                
             </div>
         </div>
         <div id="modal-container3" class="modal-container">
             <div class="modal">
                 <h2>Connect 4</h2>
-                <p>This project has a REST style api. And allow you to play connect 4 multiplayer, watch "streams" of other players games and add and remove friends.</p>
-                <div class="container-gallery">
-                    <div class="box-gallery">
-                      <img src="assets/img/port3-img1.jpg">
-                      <p>CSS</p>
+                <div class="grid modal__content">
+                    <p>This project has a REST style api. And allow you to play connect 4 multiplayer, watch "streams" of other players games and add and remove friends.</p>
+                    <!-- <div class="modal__container container swiper-container">
+
+                        <div class="swiper-wrapper">
+                            <div class="modal__content swiper-slide">
+                                <img src="assets/img/port3-img1.jpg" alt="" class="modal__img">
+                            </div>
+                            <div class="modal__content swiper-slide">
+                                <img src="assets/img/port3-img2.jpg" alt="" class="modal__img">
+                            </div>
+                            <div class="modal__content swiper-slide">
+                                <img src="assets/img/port3-img3.jpg" alt="" class="modal__img">   
+                            </div>
+                            <div class="modal__content swiper-slide">
+                                <img src="assets/img/port3-img4.jpg" alt="" class="modal__img">
+                            </div>
+                            <div class="modal__content swiper-slide">
+                                <img src="assets/img/port3-img5.jpg" alt="" class="modal__img">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next modal-adjust-right ">
+                            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                        </div>
+                        <div class="swiper-button-prev modal-adjust-left">
+                            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div> -->
+                    <div class="gallery">
+                        <div class="gallery__column">
+                            <a href="https://unsplash.com/@jeka_fe" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/_cvwXhGqG-o/300x300" alt="Portrait by Jessica Felicio" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Jessica Felicio</figcaption>
+                                </figure>
+                            </a>
+                    
+                            <a href="https://unsplash.com/@oladimeg" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Oladimeji Odunsi" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Oladimeji Odunsi</figcaption>
+                                </figure>
+                            </a>
+                    
+                            <a href="https://unsplash.com/@a2eorigins" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/VLPLo-GtrIE/300x300" alt="Portrait by Alex Perez" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Alex Perez</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        
+                        <div class="gallery__column">
+                            <a href="https://unsplash.com/@noahbuscher" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/AR7aumwKr2s/300x300" alt="Portrait by Noah Buscher" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Noah Buscher</figcaption>
+                                </figure>
+                            </a>
+                            
+                            <a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/dnL6ZIpht2s/300x300" alt="Portrait by Ivana Cajina" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Ivana Cajina</figcaption>
+                                </figure>
+                            </a>
+                    
+                            <a href="https://unsplash.com/@samburriss" target="_blank" class="gallery__link">
+                                <figure class="gallery__thumb">
+                                    <img src="https://source.unsplash.com/tV_1sC603zA/300x500" alt="Portrait by Sam Burriss" class="gallery__image">
+                                    <figcaption class="gallery__caption">Portrait by Sam Burriss</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                
                     </div>
-                    <div class="box-gallery">
-                      <img src="assets/img/port3-img2.jpg">
-                      <p>Image</p>
+                    <div class="modal__close-btn">
+                        <a id="modal-close3" class="modal-close">
+                            <i class="uil uil-times-circle"></i>
+                        </a>
                     </div>
-                    <div class="box-gallery">
-                      <img src="assets/img/port3-img3.jpg">
-                      <p>Hover</p>
-                    </div>
-                    <div class="box-gallery">
-                      <img src="assets/img/port3-img4.jpg">
-                      <p>Effect</p>
-                    </div>
-                    <div class="box-gallery">
-                        <img src="assets/img/port3-img5.jpg">
-                        <p>Effect</p>
-                      </div>
                 </div>
-                <a id="modal-close3" class="button button--flex button--small modal-close">
-                    Close
-                    <i class="uil uil-arrow-right button__icon"></i>
-                </a>
             </div>
         </div>
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script type="text/JavaScript" src="assets/js/main.js"></script>
