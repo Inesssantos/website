@@ -912,6 +912,14 @@ img{
 
 }
 
+.modal__content-title{
+    color:var(--title-color);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--h4-font-size);
+    padding: auto;
+    margin-top: 1rem;
+}
+
 .gallery {
 	display: flex;
 	transition: .3s;
