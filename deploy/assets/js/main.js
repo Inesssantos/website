@@ -67,6 +67,19 @@ let swiper = new Swiper('.portfolio__container', {
     }
   });
 
+  let swiperModal = new Swiper('.modal__container', {
+    cssMode: true,
+    loop:false,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+    }
+  });
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -181,6 +194,7 @@ open3.addEventListener('click', ()=>{
 close3.addEventListener('click', ()=>{
     modalContainer3.classList.remove('modal-show');
 })
+
 
 //Gsap
 let tl = gsap.timeline({defaults:{ease:"power3.inOut", duration:2}})
