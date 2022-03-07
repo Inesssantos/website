@@ -136,7 +136,7 @@ if (selectedTheme) {
   themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 }
 
-// Activate / deactivate the theme manually with the button
+// =============================Activate / deactivate the theme manually with the button=====================
 themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
@@ -146,7 +146,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-//modal
+//============================== Modal =====================================================================
 const open1 = document.getElementById('modal-open1');
 const modalContainer1 = document.getElementById('modal-container1');
 const close1 = document.getElementById('modal-close1');
@@ -189,12 +189,14 @@ close3.addEventListener('click', ()=>{
 })
 
 
-//Gsap
+//============================================= Gsap =============================================================
 let tl = gsap.timeline({defaults:{ease:"power3.inOut", duration:2}})
 
 tl.to('.home__data', {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity:1, y:0, duration:1.2 })
 .to('.home__social', {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity:1, y:0}, '-=2')
 .to('.home__blob',{'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity:1, y:0}, '-=1.5')
+
+//========================================= Translation =========================================================
 
 
 
