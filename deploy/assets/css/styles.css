@@ -405,7 +405,6 @@ img{
 
 .about__info{
     display: flex;
-    justify-content: space-evenly;
     margin-bottom: var(--mb-2-5);
 }
 
@@ -882,6 +881,10 @@ img{
     text-align: center;
     justify-content: right;
 }
+
+.modal__big{
+    width: 850px;
+}
 .modal__container{
     overflow: initial;
 }
@@ -1015,6 +1018,12 @@ img{
     
     .qualification__data{
         gap:.5rem;
+    }
+
+    .qualification__section{
+        display:grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
     }
 
     .gallery{
